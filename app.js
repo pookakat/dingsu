@@ -5,8 +5,16 @@ $('#modal-button').click(function(e){
 });
 
 function slideOpen(){
-    $('#tada').load("https://jernical.github.io/Ding-su/");
+    //$('#tada').load("https://jernical.github.io/Ding-su/");
     $('#stage').css({"justify-content": "space-between"});
     $('#rtdoor').animate({'left':'100%'}, "slow");
     $('#ltdoor').animate({'right':'100%'}, "slow");
-}
+    zoomStage();
+};
+
+function zoomStage(){
+    $('#stage').animate({'width': '100vw', 'height': '100vh'});
+    $('#tada').animate({'width': '100vw', 'height': '100vh'});
+    $('#theater-container').animate({'margin': '0 auto', 'width': '100vw', 'height': '100vh'});
+    $('body').animate({'margin': '0px'});
+};

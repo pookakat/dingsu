@@ -45,10 +45,14 @@ body{
   }
 
 #tada{    
-   
-   background-size: 100% 100%;
-   background-repeat: no-repeat;
+   background-color: black;
    z-index: 1;
    position: relative;
    height: 100%;
+  }
+
+  .center{
+      margin: auto;
+      position: relative;
+      top: 50%;
   }
