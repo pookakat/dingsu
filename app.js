@@ -17,4 +17,11 @@ function zoomStage(){
     $('#tada').animate({'width': '100vw', 'height': '100vh'});
     $('#theater-container').animate({'margin': '0 auto', 'width': '100vw', 'height': '100vh'});
     $('body').animate({'margin': '0px'});
+    loadFullSite();
+};
+
+function loadFullSite(){
+    $('body').fadeOut(500, function(){
+        window.location = 'https://jernical.github.io/Ding-su/'
+    });
 };
