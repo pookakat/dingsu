@@ -15,42 +15,40 @@ body{
     padding: 20px;
     border: 1px solid #888;
     height: 40vh;
-    z-index: 0;
+    z-index: 5;
   }
   #theater-container{
       margin: 15% auto;
       width: 90%;
       height: 70vh;
-      overflow: hidden;
   }
   #stage{
       width: 100%;
       height: 70vh;
-      display: flex;
-      justify-content: center;
+  }
+  #doors{
+    position: absolute;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
   .door{
-      background: yellow;
+      display: inline-block;
       background-image: url('door.jpg');
       background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 50%;
-      float: left;
       position:relative;
-      z-index: 1;
-      transition: all 1s ease-out;
+      z-index: 2;
   }
-.rtdoor{
-    transform: translateX(100%);
-}
-.ltdoor{
-    transform: translateX(-100%);
-}
-#tada{
+
+#tada{    
    background-image: url('dancingman.jpg'); 
-   background-size: 90% 100%;
+   background-size: 100% 100%;
    background-repeat: no-repeat;
-   z-index: 2;
-   position: absolute;
+   z-index: 1;
+   position: relative;
    height: 100%;
   }

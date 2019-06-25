@@ -6,4 +6,7 @@ $('#modal-button').click(function(e){
 
 function slideOpen(){
     console.log("This is where the flexbox will slide open the doors");
+    $('#stage').css({"justify-content": "space-between"});
+    $('#rtdoor').animate({'left':'100%'});
+    $('#ltdoor').animate({'right':'100%'});
 }
