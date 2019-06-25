@@ -45,7 +45,7 @@ body{
   }
 
 #tada{    
-   background-image: url('dancingman.jpg'); 
+   
    background-size: 100% 100%;
    background-repeat: no-repeat;
    z-index: 1;
