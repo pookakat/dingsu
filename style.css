@@ -13,19 +13,23 @@ body{
     font-family: 'Rock Salt', cursive;
 }
 .modal-content {
-    background-color: #EFE3AF;
-    border: 10px solid #260401;
+    box-shadow: 2px 3px black;
     position: absolute;
     left: 120px;
     right: 120px;
     top: 120px;
-    background-color: #fefefe;
+    background-color: #EFE3AF;
     margin: auto;
     width: 25%;
     padding: 20px;
-    border: 1px solid #888;
+    border: 5px solid #6E1B00;
     height: 40vh;
     z-index: 5;
+  }
+  button{
+      background-color: #6E1B00;
+      color: #EFE3AF;
+      text-shadow: black 2px 2px 2px
   }
   #theater-container{
       margin: 15% auto;
