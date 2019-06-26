@@ -3,18 +3,25 @@ body{
     text-align: center;
 }
 #myModal{
-    
 }
-.writing{
+.shojumaru{
+    font-family: 'Shojumaru', cursive;
+    color: red;
+    text-shadow: black 5px 2px 2px;
+}
+.rock-salt{
     font-family: 'Rock Salt', cursive;
 }
 .modal-content {
+    background-color: #EFE3AF;
+    border: 10px solid #260401;
     position: absolute;
     left: 120px;
     right: 120px;
     top: 120px;
     background-color: #fefefe;
     margin: auto;
+    width: 25%;
     padding: 20px;
     border: 1px solid #888;
     height: 40vh;
