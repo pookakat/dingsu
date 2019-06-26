@@ -13,10 +13,9 @@ function slideOpen(){
 };
 
 function zoomStage(){
-    $('#stage').animate({'width': '100vw', 'height': '100vh'});
-    $('#tada').animate({'width': '100vw', 'height': '100vh'});
-    $('#theater-container').animate({'margin': '0 auto', 'width': '100vw', 'height': '100vh'});
-    $('body').animate({'margin': '0px'});
+    $('#stage').animate({'width': '90vw', 'height': '90vh'});
+    $('#tada').animate({'width': '90vw', 'height': '90vh'});
+    $('#theater-container').animate({'margin': '0 auto', 'width': '90vw', 'height': '90vh'});
     loadFullSite();
 };
 
