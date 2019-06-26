@@ -1,5 +1,5 @@
 console.log('Running');
-$('#modal-button').click(function(e){
+$('.modal-button').click(function(e){
     console.log('clicky');
     $('#myModal').fadeOut(slideOpen());
 });
