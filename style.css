@@ -7,7 +7,8 @@ body{
 .shojumaru{
     font-family: 'Shojumaru', cursive;
     color: red;
-    text-shadow: black 5px 2px 2px;
+    text-shadow: black 5px 2px 2px, 0 0 0.5em orange, 0 0 0.5em orange,
+    0 0 0.5em orange;
 }
 .rock-salt{
     font-family: 'Rock Salt', cursive;
