@@ -6,4 +6,5 @@ $(document).ready(function() {
 
 $('#menu').click(function(){
     $('#site-menu').fadeIn(300);
+    $('.menu-title').css({'border-bottom': '1px solid white'});
 })
