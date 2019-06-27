@@ -24,7 +24,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 1;
     background-color: black;
-    border: 1px double lightskyblue;
+    border: 1px double #EFE3AF;
 }
 #title-text{
     display: flex;
