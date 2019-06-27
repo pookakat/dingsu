@@ -1,26 +1,42 @@
-console.log('Running');
+
 $('.modal-button').click(function(e){
-    console.log('clicky');
+    if (this.id === 'guest'){
     $('#myModal').fadeOut(slideOpen());
+    }
+    else{
+        renderLoginChoices();
+    }
 });
 
+function renderLoginChoices(){
+    $('.modal-body').html('<p class="rock-salt"> Great! Are you a...</p>');
+    $('.modal-footer').html('<button class="modal-button rock-salt" type="button" id="new-user">New User</button>');
+    $('.modal-footer').append('<p class="rock-salt">Or</p>')
+    $('.modal-footer').append('<button class="modal-button rock-salt" type="button" id="returning-user">Returning User</button>');
+}
+
 function slideOpen(){
-    //$('#tada').load("https://jernical.github.io/Ding-su/");
     $('#stage').css({"justify-content": "space-between"});
     $('#rtdoor').animate({'left':'100%'}, "slow");
     $('#ltdoor').animate({'right':'100%'}, "slow");
     zoomStage();
 };
 
+
 function zoomStage(){
-    $('#stage').animate({'width': '90vw', 'height': '90vh'});
-    $('#tada').animate({'width': '90vw', 'height': '90vh'});
-    $('#theater-container').animate({'margin': '0 auto', 'width': '90vw', 'height': '90vh'});
-    loadFullSite();
+    $('#stage').animate({'width': '90vw', 'height': '90vh'}, 'slow');
+    $('#tada').animate({'width': '90vw', 'height': '90vh'}, 'slow');
+    $('#theater-container').animate({'margin': '0 auto', 'width': '90vw', 'height': '90vh'}, 'slow');
+    waitForTheNext();
+};
+
+function waitForTheNext(){
+    var waitForLoad;
+    waitForLoad = setTimeout(loadFullSite, 1000);
 };
 
 function loadFullSite(){
     $('body').fadeOut(500, function(){
-        window.location = 'https://jernical.github.io/Ding-su/'
+        window.location = './main.html';
     });
 };
